@@ -299,6 +299,6 @@ Feedback welcome—let's make this production-ready!
 
 - **Author**: Habib Rahman
 - **Email**: gsjn711@gmail.com
-- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourprofile) (add if available)
+
 
 Built with ❤️ for the hackathon. Star the repo if it helps! ⭐
