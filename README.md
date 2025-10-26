@@ -1,6 +1,6 @@
 # Hackathon Banking System API
 
-[![FastAPI](https://img.shields.io/badge/FastAPI-1.0.5-brightgreen)](https://fastapi.tiangolo.com/) [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.x-blue)](https://www.sqlalchemy.org/) [![MySQL](https://img.shields.io/badge/MySQL-8.0-yellow)](https://www.mysql.com/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-1.0.5-brightgreen)](https://fastapi.tiangolo.com/) [![SQLAlchemy](https://img.shields.io/badge/SQLAlchemy-2.x-blue)](https://www.sqlalchemy.org/) [![MySQL](https://img.shields.io/badge/MySQL-8.0-yellow)](https://www.mysql.com/) [![Deployment](https://img.shields.io/badge/Deployed-Render-blueviolet)](https://hackathanhcl2025.onrender.com/)
 
 A robust, scalable backend API for a modern banking system built during a hackathon. This FastAPI-based application manages user authentication, customer onboarding, KYC verification, account operations (deposits/withdrawals), and loan processing with EMI calculations. It emphasizes security (JWT auth, password hashing), role-based access control (RBAC), and file handling for documents.
 
@@ -89,14 +89,23 @@ Designed for high performance and ease of use, it supports real-time operations 
   uvicorn app.main:app --host 0.0.0.0 --port 8000
   ```
 
-- **Access API Docs**:
+- **Access API Docs** (Local):
   - Swagger UI: http://localhost:8000/docs
   - ReDoc: http://localhost:8000/redoc
 
 The app starts with a welcome endpoint: `GET /` → `{"MESSAGE": "Welcome to Hackathon Banking System API"}`.
 
+### Live Deployment
+The API is deployed on Render for live testing:
+- **Base URL**: https://hackathanhcl2025.onrender.com
+- **Swagger UI**: https://hackathanhcl2025.onrender.com/docs
+- **ReDoc**: https://hackathanhcl2025.onrender.com/redoc
+- **Welcome Endpoint**: https://hackathanhcl2025.onrender.com/
+
+*Note*: Render deployments may have cold starts (slight delay on first request). In production, monitor for scalability.
+
 ### Default Superadmin Credentials
-For initial access after setup, use these default credentials to log in as Superadmin (change them immediately in production for security):
+For initial access after setup (local or deployed), use these default credentials to log in as Superadmin (change them immediately in production for security):
 
 - **Email**: gsjn711@gmail.com
 - **Password**: 3107@Habi
@@ -153,7 +162,7 @@ For initial access after setup, use these default credentials to log in as Super
 
 ## 🧪 Example Test Cases
 
-Below are sample curl commands to test key endpoints. Assume the API is running at `http://localhost:8000`. Replace placeholders (e.g., `<token>`) as needed. Responses are formatted JSON for clarity.
+Below are sample curl commands to test key endpoints. Assume the API is running at `http://localhost:8000` (or replace with deployed URL: `https://hackathanhcl2025.onrender.com`). Replace placeholders (e.g., `<token>`) as needed. Responses are formatted JSON for clarity.
 
 ### 1. Login as Superadmin
 **Request**:
@@ -299,6 +308,6 @@ Feedback welcome—let's make this production-ready!
 
 - **Author**: Habib Rahman
 - **Email**: gsjn711@gmail.com
-
+- **LinkedIn**: [Your LinkedIn](https://linkedin.com/in/yourprofile) (add if available)
 
 Built with ❤️ for the hackathon. Star the repo if it helps! ⭐
